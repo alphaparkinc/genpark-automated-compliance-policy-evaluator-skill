@@ -1,0 +1,37 @@
+{
+  "name": "genpark-automated-compliance-policy-evaluator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Automated e-commerce advertising policy and FTC/FDA regulatory compliance scanner detecting prohibited claims and trademark abuse.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "compliance",
+  "tags": [
+    "compliance",
+    "policy-evaluator",
+    "advertising-standards",
+    "moderation",
+    "guardrails"
+  ],
+  "inputs": {
+    "text_content": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "default": "Consumer Electronics"
+    }
+  },
+  "outputs": {
+    "compliance_score": {
+      "type": "integer"
+    },
+    "compliance_status": {
+      "type": "string"
+    },
+    "remediation_actions": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
